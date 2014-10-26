@@ -1,0 +1,19 @@
+extends ../layouts/base
+
+block head
+  style.
+    .header {
+      margin-bottom: 20px;
+    }
+
+block body
+  header.container
+    .header
+      a.btn.btn-primary.pull-right(href='/login') Sign in
+      h3= product
+  main
+    .jumbotron
+      .container
+        h1 Shall we play a game?
+        p.lead Invite your friends, draft your favorite film stars, and score points when the box office draw is big.
+        a.btn.btn-lg.btn-success(href='/register', role='button') Let's play

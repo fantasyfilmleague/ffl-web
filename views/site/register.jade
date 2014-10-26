@@ -1,0 +1,31 @@
+extends ../layouts/base
+
+block head
+  style.
+    .header {
+      margin-bottom: 20px;
+    }
+
+block body
+  header.container
+    .header
+      h3= product
+  main.container
+    form(action='/register', method='post', role='form')
+      .form-group
+        label(for='email') Email
+        input.form-control(type='email', name='email', placeholder='you@gmail.com', autofocus, required)
+      .form-group
+        label(for='password') Password
+        input.form-control(type='password', name='password', required)
+      .form-group
+        label(for='password') Confirm password
+        input.form-control(type='password', name='confirmation', required)
+      .form-group
+        label(for='name') League name
+        input.form-control(type='text', name='name', placeholder='League of Extraordinary Gentleman', required)
+      .form-group
+        label(for='friends') Friends
+        input.form-control(type='text', name='friends', placeholder='norman@batesmotel.com, et@home.com, nooooo@deathstar.edu', required)
+        p.help-block Add your competition by email address. Be sure to separate them with a comma!
+      button.btn.btn-primary(type='submit') Create league
