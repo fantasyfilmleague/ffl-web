@@ -1,14 +1,13 @@
 {
   "name": "ffl-web",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Fantasy Film League Web",
   "main": "app.js",
   "bin": {
     "ffl-web": "./bin/ffl-web"
   },
   "scripts": {
-    "start": "ffl-tasks & node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Bird Duck Software",
